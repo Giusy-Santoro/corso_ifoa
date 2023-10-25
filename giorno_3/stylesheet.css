@@ -1,0 +1,149 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+   
+    
+}
+
+
+header{
+    text-align: center;
+}
+
+header hr{ 
+    border: 1px solid #FFDD87;   
+}
+
+
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 50%;
+    margin: auto;
+   text-align: justify;
+  
+}
+
+
+ h1{
+    text-align: center;
+ }
+
+
+
+
+/* immagine e didascalia*/
+ figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+
+ #focaccia{
+    box-shadow: 5px 5px 5px rgb(221, 221, 221);
+   border-radius: 5px;
+   font-style: normal;
+ }
+
+ figcaption{  /* didascalia*/
+    color: gray ;
+    opacity: 0.7;
+    text-align: center;
+    margin-top: 15px;
+ }
+
+
+
+
+
+
+/* contenuto dell'aside*/
+ a{
+    color: #328889;
+ }
+
+ a:hover{
+        color: #d69a18;
+ }
+  aside p{
+    color: #BB5625;
+    margin-bottom: -1px;
+    font-size: 13px;
+    
+  }
+
+
+
+
+
+aside{
+    display: flex;    
+    flex-direction: column;     
+    justify-content: center;
+    margin: auto;
+    text-align: left;
+     
+    
+}
+/* creazione linea verticale con un div*/
+#lineaverticale{
+    
+    border-left: 1px solid #FFDD87;
+    height: 35px;   
+
+}
+
+#lineaverticale p,a{
+    margin-left: 10px;
+    margin-top: -1px;
+
+}
+
+
+
+
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 50%;
+    margin: auto;
+   text-align: justify;
+}
+
+section>hr{
+    border: 1px solid #C4F3F2;
+    width: 100%;
+    margin-top: -5px;
+}
+
+h4{ 
+    margin-bottom: -5px;
+
+}
+ul{
+    margin-bottom: -5px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+
+/* ponendo questo all'inizio, posso evitare di definire le caratteristiche di ogni contenitore*/
+article, section, main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 50%;
+    margin: auto;
+   text-align: justify;
+} 
