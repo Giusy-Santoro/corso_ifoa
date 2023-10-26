@@ -1,0 +1,150 @@
+/* IMPOSTAZIONI GENERALI */
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{ 
+  font-family:'Poppins', sans-serif;
+  background-image: url("../img/sfondo.png");
+}
+
+
+.container{
+    
+    width: 90%;     
+    margin: auto;
+   
+}
+/* HEADER */
+
+header{
+    background: linear-gradient(to bottom, #50afcc, #006688 );
+    box-shadow: 1px 3px 3px rgb(69, 72, 73);
+    text-align: center;
+    padding: 30px;
+}
+
+header h2{
+    color: rgb(255, 255, 255);
+}
+
+.star-list{
+    list-style: none;
+    padding: 0;
+}
+
+
+
+.star-list i{
+color: white;
+
+}
+
+
+header li{
+    color: white;
+}
+/* MAIN */
+main{
+    
+}
+/* ELEMENTI NEL MAIN - ARTICLE */
+article{
+    background-color: white;
+    box-shadow: 0px 3px 3px rgb(69, 72, 73);
+    margin-top: 30px;
+    padding: 2px;
+    
+}
+
+.caption{
+    color: #888;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.caption::before{
+    content: "\f303"; /* Codice dell'icona della penna */
+      font-family: "Font Awesome 5 Free";
+      margin-right: 5px;
+}
+
+.time-icon::before{
+    content: "\f017"; /* Codice dell'icona dell'orologio */
+    font-family: "Font Awesome 5 Free";
+    margin-right: 5px;
+
+}
+
+p>span{
+    color: #9C2690;
+
+}
+
+code{
+    background-color: #dfdddd;
+    border-radius: 5px;
+    border: 1px solid rgb(190, 189, 189);
+    font-family: inherit; /* in questo modo prende il font della <p>*/
+}
+
+li{
+    margin-bottom: 5px;
+}
+/* TABELLE */
+
+
+
+#table{
+    text-align: center;
+
+}
+table{
+   text-align: center; 
+   border-bottom: 2px solid #4167C7;
+    margin-bottom: 20px;
+}
+ th, td{
+    
+      
+ }
+ th {
+    width: 100px;
+    height: 100px;
+    background-color: #4167C7;
+    color: white;
+    
+  }
+
+
+  tr:nth-child(odd) {
+    background-color: #e4e4e4;
+  }
+
+  
+
+/* FORM */
+#form{
+    width: 450px;
+    height: 200px;
+    background-color: rgb(219, 219, 219);
+    padding: 10px;
+    
+    
+}
+#form h3{
+    text-align: center;
+}
+ 
+iframe{
+    width: 95%;
+    height: 300px;
+}
+
+/* ELEMENTI NELL' ASIDE */
+
+
+
+/* FOOTER */
