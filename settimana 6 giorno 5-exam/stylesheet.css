@@ -19,7 +19,13 @@ header img{
 
 nav a{
     color: white !important;
+    transition: color 0.3s ease;
 }
+
+nav a:hover{
+    color: red !important;
+}
+
 
 #user{
 width: 30px;
@@ -29,6 +35,11 @@ width: 30px;
     background-color: rgb(34, 34, 34);
   }
 
+  .genres-button{
+    border-radius: 0;
+    background-color: #000000;
+
+  }
   .card {
     background-color: #333;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -48,6 +59,14 @@ width: 30px;
 .card img:hover{
     filter: brightness(100%);
 } 
+
+.a{
+    font-size: 12px;
+}
+
+.footer-button{
+    border-radius: 0;
+}
 
 /*-----------------EDIT PROFILE-----------*/
 .profile{
