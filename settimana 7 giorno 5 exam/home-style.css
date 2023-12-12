@@ -17,3 +17,23 @@
     width: 20vw
    
 }
+
+
+
+
+
+/* ------------  back page -----------------*/
+
+.editButton {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Stile per la tabella */
+.table {
+    width: 100%;
+}
+
+.form{
+    text-align: center;
+}

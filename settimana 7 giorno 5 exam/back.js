@@ -29,13 +29,39 @@ const displayProducts = () => {
     productList.innerHTML = "";
 
     products.forEach(product => {
-        const listItem = document.createElement("li");
-        listItem.innerHTML = `
-            <input type="checkbox" id="${product._id}" value="${product._id}">
-            <label for="${product._id}">${product.name} - ${product.price}</label>
-            <button onclick="editProduct('${product._id}')">Edit</button> <!-- Pulsante di modifica -->
-        `;
-        productList.appendChild(listItem);
+        const row = document.createElement("tr");
+
+        const selectCell = document.createElement("td");
+        const selectCheckbox = document.createElement("input");
+        selectCheckbox.type = "checkbox";
+        selectCheckbox.value = product._id;
+        selectCell.appendChild(selectCheckbox);
+        row.appendChild(selectCell);
+
+        const columns = [
+            product.name,
+            product.description,
+            product.price,
+            product.brand
+        ];
+
+        columns.forEach(column => {
+            const cell = document.createElement("td");
+            cell.textContent = column;
+            row.appendChild(cell);
+        });
+
+        const actionsCell = document.createElement("td");
+        const editButton = document.createElement("button");
+        editButton.textContent = "Edit";
+        editButton.classList.add("btn", "btn-primary", "editButton");
+        editButton.addEventListener("click", () => {
+            editProduct(product._id);
+        });
+        actionsCell.appendChild(editButton);
+        row.appendChild(actionsCell);
+
+        productList.appendChild(row);
     });
 };
 
