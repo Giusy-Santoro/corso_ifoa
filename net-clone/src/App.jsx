@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
 import Movies from './components/Movies';
+import TVShowsSection from './components/TVShowsSection';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer';
 
@@ -51,7 +52,7 @@ function App() {
     <>
       <div>
         <NavBar />
-        
+        <TVShowsSection genre="TV Shows" displayIcons={true}/> 
         <h2>Trending Now</h2>
         <div className='gallery'>
           <Movies movies={moviesLOTR} />

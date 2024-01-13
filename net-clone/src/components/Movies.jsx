@@ -82,7 +82,7 @@ const Movies = (props) => {
         const movieGroup = props.movies.slice(i, i + moviesPerRow);
 
         items.push(
-            <Carousel.Item key={i} className="movie-carousel-item movieCarousel">
+            <Carousel.Item key={i} className="movie-carousel-item movieCarousel ">
                 <div className="d-flex justify-content-between movieCarousel">
                     {movieGroup.map((movie, index) => (
                         <div key={index} className="movie-poster-container">
