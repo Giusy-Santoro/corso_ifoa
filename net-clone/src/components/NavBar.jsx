@@ -3,8 +3,8 @@ import logo from '../assets/img/logo.png';
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="navbar-dark ">
-      <Container className="d-flex justify-content-between align-items-center mx-0">
+    <Navbar expand="lg" className="navbar-dark">
+      <Container fluid className="d-flex justify-content-between align-items-center">
         <Navbar.Brand href="#">
           <img
             alt="Logo"
@@ -23,12 +23,13 @@ function NavBar() {
             <Nav.Link href="#">Recently Added</Nav.Link>
             <Nav.Link href="#">My List</Nav.Link>
           </Nav>
-          </Navbar.Collapse>
+        </Navbar.Collapse>
+        <div className="d-flex">
           <i className="fa fa-search icons"></i>
           <div id="kids">KIDS</div>
           <i className="fa fa-bell icons"></i>
           <i className="fa fa-user icons"></i>
-       
+        </div>
       </Container>
     </Navbar>
   );
